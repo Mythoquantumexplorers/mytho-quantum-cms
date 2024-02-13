@@ -39,6 +39,12 @@ export default defineType({
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
+      name: 'status',
+      title: 'Status',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'status'}}],
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
